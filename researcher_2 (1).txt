@@ -1,0 +1,7 @@
+The main advantages of the transformer architecture over RNNs include:
+
+1. **Global Dependencies**: Transformers can capture long-range dependencies in the input sequence more effectively compared to RNNs, which rely on sequential processing. This allows transformers to establish connections between distant parts of the input sequence more easily.
+
+2. **Parallelization**: Transformers are highly parallelizable, as they process all parts of the input sequence simultaneously. In contrast, RNNs process input sequentially, limiting parallelization and potentially slowing down computation.
+
+3. **Shorter Training Time**: Due to their parallel nature and efficient processing of global dependencies, transformers can achieve state-of-the-art results in tasks like machine translation with shorter training times compared to RNNs. This can lead to faster experimentation and deployment of models in real-world applications.

@@ -1,0 +1,10 @@
+LoRA (Low-Rank Adaptation) works in large language model fine-tuning by targeting a small subset of the model's weights that have the most significant impact on the specific task at hand. It aims to efficiently fine-tune large-scale models by tracking changes to weights instead of updating them directly. This is achieved through matrix decomposition, where large matrices of weight changes are broken down into smaller matrices that contain the trainable parameters. 
+
+LoRA offers several advantages in the fine-tuning process:
+1. Significant reduction in trainable parameters, leading to faster and more efficient fine-tuning.
+2. Preservation of the original pre-trained weights, enabling the creation of multiple lightweight models for different tasks.
+3. Compatibility with other parameter-efficient methods for further optimization.
+4. Comparable performance to fully fine-tuned models in many cases.
+5. No additional inference latency, as adapter weights can be merged with the base model.
+
+The matrix decomposition approach of LoRA, such as breaking down a 5x5 matrix into a 5x1 and 1x5 matrix, reduces the overall storage requirement and accelerates computations. This strategic focus on specific weights, particularly within attention blocks, maximizes efficiency during the fine-tuning process.

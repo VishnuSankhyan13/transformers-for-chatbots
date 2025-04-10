@@ -1,0 +1,9 @@
+In transformer models, the attention mechanism works by allowing the model to focus on different parts of the input sequence when processing each position. This mechanism involves three key components:
+
+1. Query, Key, and Value Vectors: Each input position is associated with three vectors - query, key, and value. These vectors are linear transformations of the input embeddings.
+
+2. Attention Scores: The attention scores are computed by taking the dot product of the query vector of a position with the key vectors of all positions in the sequence. These scores determine how much focus each position should give to the current position during the computation.
+
+3. Attention Weights and Context Vectors: The attention scores are scaled and normalized using a softmax function to obtain attention weights. These weights are then used to compute a weighted sum of the value vectors, producing a context vector that encapsulates information from relevant positions in the sequence.
+
+By processing the input sequence in this manner, the transformer model can capture long-range dependencies and relationships between different parts of the sequence without relying on sequential processing like RNNs or convolutions.
